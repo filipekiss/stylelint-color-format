@@ -4,7 +4,7 @@
   "description": "Convert Hex colors to either RGBA or HSLA",
   "main": "index.js",
   "scripts": {
-    "test": "node rules/color-format/format.test.js",
+    "test": "xo && node rules/color-format/format.test.js",
     "precommit": "lint-staged",
     "prettier:check": "prettier '**/*.js' --list-different",
     "prettier:fix": "prettier '**/*.js' --write"
