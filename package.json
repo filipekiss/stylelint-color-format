@@ -30,7 +30,7 @@
     "stylelint-test-rule-tape": "^0.2.0",
     "xo": "^0.21.0"
   },
-  "keywords": ["stylelint", "stylelint-plugin"],
+  "keywords": ["stylelint", "stylelint-plugin", "css", "sass", "scss"],
   "author": "Filipe Kiss <eu@filipekiss.com.br>",
   "license": "MIT",
   "bugs": {
