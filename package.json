@@ -4,7 +4,8 @@
   "description": "Convert Hex colors to either RGBA or HSLA",
   "main": "index.js",
   "scripts": {
-    "test": "xo && node rules/color-format/format.test.js",
+    "lint": "xo",
+    "test": "node rules/color-format/format.test.js",
     "precommit": "lint-staged",
     "prettier:check": "prettier '**/*.js' --list-different",
     "prettier:fix": "prettier '**/*.js' --write"
@@ -17,8 +18,8 @@
     "color": "^3.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^8.0.0 || ^9.0.0",
-    "style-search": "^0.1.0"
+    "style-search": "^0.1.0",
+    "stylelint": "^8.0.0 || ^9.0.0"
   },
   "devDependencies": {
     "eslint-config-stylelint": "^8.1.0",
