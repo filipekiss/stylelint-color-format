@@ -1,5 +1,12 @@
 # stylelint-color-format
 
+[![CircleCI](https://circleci.com/gh/filipekiss/stylelint-color-format/tree/master.svg?style=shield)](https://circleci.com/gh/filipekiss/stylelint-color-format/tree/master)
+[![TravisCI Status](https://travis-ci.org/filipekiss/stylelint-color-format.svg?branch=master)](https://travis-ci.org/filipekiss/stylelint-color-format)
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![NPM
+version](https://img.shields.io/npm/v/stylelint-color-format.svg)](https://www.npmjs.org/package/stylelint-color-format)
+
 A [Stylelint] plugin to convert HEX colors to either RGB or HSL formats.
 
 ## Installation
