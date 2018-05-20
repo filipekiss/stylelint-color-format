@@ -1,6 +1,6 @@
 {
   "name": "stylelint-color-format",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Convert Hex colors to either RGBA or HSLA",
   "main": "index.js",
   "scripts": {
