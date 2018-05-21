@@ -58,6 +58,6 @@ This will convert any HEX colors to HSL. If the HEX color has a transparency, th
 LICENSE - [MIT]
 
 [stylelint]: https://github.com/stylelint/stylelint/
-[style configuration]: https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configuration.md
+[stylelint configuration]: https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configuration.md
 [`color-no-hex`]: https://github.com/stylelint/stylelint/blob/master/lib/rules/color-no-hex/README.md
 [mit]: LICENSE.md
