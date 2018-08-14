@@ -53,7 +53,7 @@ This will convert any HEX colors to RGB. If the HEX color has a transparency, th
 
 #### `hsl` | `hsla`
 
-This will convert any HEX colors to HSL. If the HEX color has a transparency, the RGBA format will be used.
+This will convert any HEX colors to HSL. If the HEX color has a transparency, the HSLA format will be used.
 
 LICENSE - [MIT]
 
