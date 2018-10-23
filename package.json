@@ -1,6 +1,6 @@
 {
   "name": "stylelint-color-format",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Convert Hex colors to either RGBA or HSLA",
   "main": "index.js",
   "scripts": {
@@ -31,7 +31,13 @@
     "stylelint-test-rule-tape": "^0.2.0",
     "xo": "^0.21.0"
   },
-  "keywords": ["stylelint", "stylelint-plugin", "css", "sass", "scss"],
+  "keywords": [
+    "stylelint",
+    "stylelint-plugin",
+    "css",
+    "sass",
+    "scss"
+  ],
   "author": "Filipe Kiss <eu@filipekiss.com.br>",
   "license": "MIT",
   "bugs": {
@@ -40,7 +46,9 @@
   "homepage": "https://github.com/filipekiss/stylelint-color-format#readme",
   "xo": {
     "space": 2,
-    "extends": ["stylelint"],
+    "extends": [
+      "stylelint"
+    ],
     "prettier": true,
     "overrides": [
       {
@@ -60,7 +68,11 @@
     "arrowParens": "avoid"
   },
   "lint-staged": {
-    "*.js": ["npm test", "prettier --write", "git add"]
+    "*.js": [
+      "npm test",
+      "prettier --write",
+      "git add"
+    ]
   },
   "engines": {
     "node": ">=6"
