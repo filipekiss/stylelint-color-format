@@ -7,11 +7,32 @@ const {report, ruleMessages, validateOptions} = stylelint.utils;
 const ruleName = 'color-format/format';
 
 const fixColorFormat = (value, fixer) => {
-  const color = colorConverter(value);
-  if (fixer.fixTo.indexOf('hsl') > -1) {
-    return color.hsl().string();
+  if (!value) {
+    return value;
   }
-  return color.rgb().string();
+  // Extract the color from value
+  const hexMatch = value.match(/#[0-9A-Za-z]+/g);
+  if (!hexMatch) {
+    return value;
+  }
+  const colorTranslation = hexMatch.reduce((table, hexColor, idx, src) => {
+    const color = colorConverter(hexColor);
+    if (fixer.fixTo.indexOf('hsl') > -1) {
+      table[hexColor] = color
+        .hsl()
+        .round()
+        .string();
+    } else {
+      table[hexColor] = color.rgb().string();
+    }
+    return table;
+  }, {});
+  Object.entries(colorTranslation).forEach(colorTuple => {
+    const hexColor = colorTuple[0];
+    const fixedColor = colorTuple[1];
+    value = value.replace(hexColor, fixedColor);
+  });
+  return value;
 };
 
 const messages = ruleMessages(ruleName, {

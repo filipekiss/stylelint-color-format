@@ -11,6 +11,11 @@ testRule(format, {
   accept: [
     {
       code: '.rgb-color { color: rgb(34, 34, 34); }',
+      description: 'Valid RGB Color',
+    },
+    {
+      code: '.hsla-color { color: hsl(328, 100%, 44%); }',
+      description: 'Valid HSL Color',
     },
   ],
 
@@ -35,6 +40,13 @@ testRule(format, {
       description: 'Valid long hex color',
       line: 1,
       column: 21,
+    },
+    {
+      code: '.hex-color-border { border: 6px solid #222 ); } ',
+      message: 'Unexpected hex color "#222" (color-format/format)',
+      description: 'Valid short hex color in shorthand property',
+      line: 1,
+      column: 39,
     },
   ],
 });
