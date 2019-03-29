@@ -15,7 +15,7 @@ const fixColorFormat = (value, fixer) => {
   if (!hexMatch) {
     return value;
   }
-  const colorTranslation = hexMatch.reduce((table, hexColor, idx, src) => {
+  const colorTranslation = hexMatch.reduce((table, hexColor) => {
     const color = colorConverter(hexColor);
     if (fixer.fixTo.indexOf('hsl') > -1) {
       table[hexColor] = color
