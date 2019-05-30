@@ -17,7 +17,8 @@ npm install --save-dev stylelint-color-format
 
 ## Configuration
 
-In you [Stylelint Configuration], add the following to the plugins:
+In your [Stylelint Configuration], add the following to the plugins array.
+(Make sure the plugins array comes **before** your rules block):
 
 ```json
 {
