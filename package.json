@@ -19,7 +19,7 @@
   },
   "peerDependencies": {
     "style-search": "^0.1.0",
-    "stylelint": "^8.0.0 || ^9.0.0"
+    "stylelint": "^8.0.0 || ^9.0.0 || ^10.0.0"
   },
   "devDependencies": {
     "eslint-config-stylelint": "^8.1.0",
