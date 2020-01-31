@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-    - image: circleci/node:carbon
+    - image: circleci/node:erbium
     working_directory: ~/repo
     steps:
     - checkout
