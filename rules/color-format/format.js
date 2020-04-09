@@ -89,7 +89,7 @@ const rule = function(actual, options, context) {
             : messages.rejected(hexValue);
 
         report({
-          message: message,
+          message,
           node: decl,
           index: match.startIndex,
           result,
