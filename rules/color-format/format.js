@@ -37,6 +37,7 @@ const fixColorFormat = (value, fixer) => {
 
 const messages = ruleMessages(ruleName, {
   rejected: hex => `Unexpected hex color "${hex}"`,
+  custom: message => message,
 });
 
 const rule = function(actual, options, context) {
@@ -82,8 +83,13 @@ const rule = function(actual, options, context) {
           return;
         }
 
+        const message =
+          actual && actual.message
+            ? messages.custom(actual.message)
+            : messages.rejected(hexValue);
+
         report({
-          message: messages.rejected(hexValue),
+          message: message,
           node: decl,
           index: match.startIndex,
           result,

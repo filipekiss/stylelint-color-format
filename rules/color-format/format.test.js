@@ -50,3 +50,21 @@ testRule(format, {
     },
   ],
 });
+
+testRule(format, {
+  ruleName: format.ruleName,
+  config: {
+    format: 'rgb',
+    message: 'Custom Error Message',
+  },
+
+  reject: [
+    {
+      code: '.hex-color { color: #222 ); } ',
+      message: 'Custom Error Message (color-format/format)',
+      description: 'Valid short hex color',
+      line: 1,
+      column: 21,
+    },
+  ],
+});
