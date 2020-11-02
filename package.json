@@ -27,7 +27,7 @@
     "lint-staged": "^7.1.0",
     "np": "^2.20.1",
     "prettier": "^1.12.1",
-    "standard-version": "^7.1.0",
+    "standard-version": "^8.0.1",
     "stylelint": ">=8.0.0",
     "stylelint-test-rule-tape": "^0.2.0",
     "xo": "^0.24.0"
