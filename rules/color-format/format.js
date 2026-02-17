@@ -18,10 +18,7 @@ const fixColorFormat = (value, fixer) => {
   const colorTranslation = hexMatch.reduce((table, hexColor) => {
     const color = colorConverter(hexColor);
     if (fixer.fixTo.indexOf('hsl') > -1) {
-      table[hexColor] = color
-        .hsl()
-        .round()
-        .string();
+      table[hexColor] = color.hsl().round().string();
     } else {
       table[hexColor] = color.rgb().string();
     }
@@ -40,7 +37,7 @@ const messages = ruleMessages(ruleName, {
   custom: message => message,
 });
 
-const rule = function(actual, options, context) {
+const rule = function (actual, options, context) {
   return (root, result) => {
     const validOptions = validateOptions(result, ruleName, {
       actual,
@@ -92,6 +89,7 @@ const rule = function(actual, options, context) {
           message,
           node: decl,
           index: match.startIndex,
+          endIndex: match.endIndex,
           result,
           ruleName,
         });
