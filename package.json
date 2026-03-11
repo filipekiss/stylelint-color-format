@@ -30,7 +30,7 @@
     "standard-version": "^8.0.1",
     "stylelint": ">=8.0.0",
     "stylelint-test-rule-tape": "^0.2.0",
-    "xo": "^0.24.0"
+    "xo": "^1.2.3"
   },
   "keywords": [
     "stylelint",
