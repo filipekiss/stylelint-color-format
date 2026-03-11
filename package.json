@@ -4,7 +4,7 @@
   "description": "Convert Hex colors to either RGBA or HSLA",
   "main": "index.js",
   "scripts": {
-    "lint": "xo",
+    "lint": "oxlint index.js rules/index.js rules/color-format/format.js rules/color-format/format.test.js",
     "test": "node rules/color-format/format.test.js",
     "precommit": "lint-staged",
     "prettier:check": "prettier '**/*.js' --list-different",
@@ -22,15 +22,14 @@
     "stylelint": ">=8.0.0"
   },
   "devDependencies": {
-    "eslint-config-stylelint": "^8.1.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.1.0",
     "np": "^2.20.1",
-    "prettier": "^1.12.1",
+    "oxlint": "^1.35.0",
+    "prettier": "^3.8.1",
     "standard-version": "^8.0.1",
     "stylelint": ">=8.0.0",
-    "stylelint-test-rule-tape": "^0.2.0",
-    "xo": "^0.24.0"
+    "stylelint-test-rule-tape": "^0.2.0"
   },
   "keywords": [
     "stylelint",
@@ -45,22 +44,6 @@
     "url": "https://github.com/filipekiss/stylelint-color-format/issues"
   },
   "homepage": "https://github.com/filipekiss/stylelint-color-format#readme",
-  "xo": {
-    "space": 2,
-    "extends": [
-      "stylelint"
-    ],
-    "prettier": true,
-    "overrides": [
-      {
-        "files": "**/*.test.js",
-        "rules": {
-          "node/no-unpublished-require": 0,
-          "unicorn/import-index": 0
-        }
-      }
-    ]
-  },
   "prettier": {
     "semi": true,
     "singleQuote": true,
