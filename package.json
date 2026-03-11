@@ -25,12 +25,12 @@
     "eslint-config-stylelint": "^8.1.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.1.0",
-    "np": "^2.20.1",
+    "np": "^11.0.2",
     "prettier": "^1.12.1",
     "standard-version": "^8.0.1",
     "stylelint": ">=8.0.0",
     "stylelint-test-rule-tape": "^0.2.0",
-    "xo": "^0.24.0"
+    "xo": "^1.2.3"
   },
   "keywords": [
     "stylelint",
