@@ -1,7 +1,6 @@
 # stylelint-color-format
 
-[![CircleCI](https://circleci.com/gh/filipekiss/stylelint-color-format/tree/master.svg?style=shield)](https://circleci.com/gh/filipekiss/stylelint-color-format/tree/master)
-[![TravisCI Status](https://travis-ci.org/filipekiss/stylelint-color-format.svg?branch=master)](https://travis-ci.org/filipekiss/stylelint-color-format)
+[![CI](https://img.shields.io/github/actions/workflow/status/filipekiss/stylelint-color-format/ci.yml?branch=master)](https://github.com/filipekiss/stylelint-color-format/actions/workflows/ci.yml)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![NPM
