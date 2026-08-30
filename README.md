@@ -1,3 +1,5 @@
+
+
 # stylelint-color-format
 
 [![CI](https://img.shields.io/github/actions/workflow/status/filipekiss/stylelint-color-format/ci.yml?branch=master)](https://github.com/filipekiss/stylelint-color-format/actions/workflows/ci.yml)
@@ -45,7 +47,7 @@ to your configuration
 
 ## Configuration
 
-The `color-format/format` rule accepts an object with a single `format` key.
+The `color-format/format` rule accepts an object with a `format` key and an optional `message` key.
 
 #### `rgb` | `rgba`
 
